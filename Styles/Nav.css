@@ -10,3 +10,17 @@
 .button{
   width: 100px;
 }
+
+.title{
+  font-family: "Playfair Display", serif;
+
+}
+
+.peregraph{
+  font-family: "Dancing Script", cursive;
+}
+
+#profile-card:hover {
+  transform: scale(1.05);
+  /* background: rgb(7, 67, 33); */
+}

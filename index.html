@@ -14,6 +14,9 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
+
+
+
     <!-- tailwind custom color -->
   <script>
     tailwind.config = {
@@ -32,11 +35,12 @@
 
   <header> 
 
+    <!-- Navigation -->
 <nav id="navigation">
     <div class="navbar bg-black">
       <div class="navbar-start">
         <!-- Dropdown menu -->
-        <div class="dropdown">
+        <div class="dropdown ">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
@@ -92,7 +96,7 @@
     </script>
     
 
-    <div class="navbar  relative z-50"">
+    <div class="navbar  relative z-50">
         <div class="navbar-start">
           <!-- Dropdown menu and brand -->
           <div class="dropdown">
@@ -263,6 +267,47 @@
  <!-- Main section  -->
 
   <main>
+   
+     <!-- Banner Section -->
+  <div class="w-full mx-auto flex flex-col md:flex-row items-center  mb-10 gap-5 bg-slate-800 lg:p-28 p-6">
+    <div class="md:w-1/2 flex flex-col items-start space-y-4">
+      <h2 class="text-4xl font-bold text-white">LEARN AT HOME</h2>
+      <p class="text-lg text-[#F69B32] font-semibold">Let's start with a free class</p>
+      <p class="text-sm text-[#4e9ff4]">
+        SkillPro is a premier online learning platform designed to empower students with in-depth computer science knowledge. Featuring top educators from Bangladesh, SkillPro offers expertly crafted courses that make mastering computer science accessible and engaging for learners at every level
+      </p>
+
+      <!-- banner button div -->
+      <div class="flex space-x-2">
+
+       <!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-orange-500" onclick="my_modal_1.showModal()">15% OFF IN THE FIRST TWO MONTHS</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Please log in to continue.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+      </div>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0">
+      <img src="Images/learning from online.jpg" alt="E-learning" class="w-full rounded-md shadow-lg">
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
   <!-- Carousel Section -->
     <section>
@@ -326,5 +371,8 @@
 
   </footer>
   
+
+
+ 
 </body>
 </html>
